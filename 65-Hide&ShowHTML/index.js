@@ -1,0 +1,19 @@
+/**
+ * Hide & Show HTML
+ */
+
+const myButton = document.getElementById("myButton");
+
+const myImg = document.getElementById("myImg");
+
+myButton.addEventListener("click", function(event) {
+  if (myImg.style.display === "none") {
+    myImg.style.display = "block";
+    myButton.textContent = "Hide";
+  } else {
+    myImg.style.display = "none";
+    myButton.textContent = "Show";
+  }
+
+});
+
