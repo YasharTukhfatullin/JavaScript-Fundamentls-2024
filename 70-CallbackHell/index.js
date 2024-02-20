@@ -21,14 +21,14 @@ function task2(callback) {
 };
 
 function task3(callback) {
-  setTimeout(function (callback) {
+  setTimeout(function () {
     console.log("Task 3 complete");
     callback();
   }, 3000);
 };
 
 function task4(callback) {
-  setTimeout(function (callback) {
+  setTimeout(function () {
     console.log("Task 4 complete");
     callback();
   }, 1500);
@@ -39,7 +39,7 @@ task1(function () {
     task3(function () {
       task4(function () {
         console.log("All task are complete");
-      })
-    })
+      });
+    });
   });
 });
